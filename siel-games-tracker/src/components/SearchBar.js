@@ -1,25 +1,12 @@
-import React , {useEffect, useState} from 'react'
+import React from 'react'
 
- function SearchBar( {setFilterGames} ) {
- 
- const [searchGame , setSearchGame] = useState("")
+ function SearchBar() {
 
- useEffect(() => {
-    fetch (`"http://localhost:8000/games"${searchGame}`)
-    .then ((r) => r.json())
-    .then (data => {setFilterGames(data)})
-   }, [searchGame]);
-
-   function handleGameSearch(e) {
-    setSearchGame (e.target.value)
-   }
-    
     return (
     <div>
     <form>
-    <input type='text' placeholder='search game...'  onChange={handleGameSearch}></input>
+    <input type='text' placeholder='search game...' />
     </form>
-    
     </div>
   )
 }

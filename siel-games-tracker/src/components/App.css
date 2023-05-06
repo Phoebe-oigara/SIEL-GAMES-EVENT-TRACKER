@@ -1,26 +1,67 @@
 .app{
-  background-color: #ffffff;
- 
+  display: flex;
+
  }
+ input {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+  border: solid 1px #01295C;
+  border-radius: 6px;
+  margin-left: 76px;
+  margin-bottom: 20px;
+}
+ .content{
+
+  margin-left: 200px;
+  margin-top: 30px;
+  width: 85%;
+  background-image: url("images/basketball-player-splash-silhouette_9245-72-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-size: 60%;
+
+ }
+ .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15%; 
+  height: 100%; 
+  background-color: #01295C ;
+  z-index: 1; 
+  color: #ffffff;
+}
+
+.sidebar .navbar {
+  padding: 20px; 
+}
+
  .container {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    grid-column-gap: 5rem;
    grid-row-gap: 1rem;
    margin: auto;
-   width: 80%;
- 
+   width: 85%;
+  
  }
+
  p{
    padding: 5px;
  }
+
  .card {
    display: flex;
    border: 1px solid #ccc;
    border-radius: 5px;
-   padding: 30px;
+   padding: 20px;
    width: 100%;
    margin: auto;
+   background-color: #ffffffcb;
+   font-family: 'Knockout Wide ';
  }
  
  .card-left {
@@ -38,6 +79,7 @@
    justify-content: space-between;
    align-items: flex-end;
    width: 40%;
+   font-size: 14px;
  }
  
  .card h2 {

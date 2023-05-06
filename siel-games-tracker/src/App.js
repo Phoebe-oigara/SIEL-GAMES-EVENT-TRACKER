@@ -1,12 +1,21 @@
 import React from 'react';
 import GameList from './components/GameList';
+import Navbar from './components/Navbar';
+import SearchBar from './components/SearchBar';
+
 
 function App() {
 
   return (
     <div className="app">
-      <h1>Basketball Schedule</h1>
-      <GameList  />
+      <div className="sidebar">
+      <Navbar   />
+      </div>
+     <div className="content">
+      <SearchBar />
+      <GameList />
+     </div>
+     
     </div>
   );
 }

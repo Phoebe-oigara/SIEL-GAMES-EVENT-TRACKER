@@ -8,7 +8,7 @@ function GameCard(props) {
 
     <div className="card">
     <div className="card-left">
-    <p>{game['GAME NO.']}</p>
+    <p style={{ color: "#01295C" }}>{game['GAME NO.']}</p>
       <h2>{game['HOME']}</h2>
       <p>Vs</p>
       <h2>{game['AWAY']}</h2>
