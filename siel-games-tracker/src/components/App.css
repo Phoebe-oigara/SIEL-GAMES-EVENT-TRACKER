@@ -1,11 +1,17 @@
 .app{
   display: flex;
+  background-color: aliceblue;
 
  }
  .team {
-  text-align: center;
+  
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2px;
+  margin: auto;
+  width: 50%;
+  margin-left: 400px;
+  color: #01295C;;
  
  }
  .nav{
@@ -20,8 +26,8 @@
 }
 
  .img{
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 130px;
  }
 
 
@@ -35,6 +41,7 @@
   margin-left: 76px;
   margin-bottom: 20px;
 }
+
  .content{
   margin-left: 200px;
   margin-top: 30px;
@@ -45,7 +52,7 @@
   background-attachment: fixed;
   background-size: 60%;
  }
- 
+
  .sidebar {
   position: fixed;
   top: 0;
@@ -78,12 +85,13 @@
  .card {
    display: flex;
    border: 1px solid #ccc;
-   border-radius: 5px;
+   border-radius: 10px;
    padding: 20px;
    width: 100%;
    margin: auto;
    background-color: #ffffffcb;
-   font-family: 'Knockout Wide ';
+
+   
  }
  
  .card-left {
@@ -93,6 +101,11 @@
    width: 60%;
    flex: 1;
    border-right: 1px solid #ccc;
+   
+   padding: 10px;
+  
+
+
  }
  
  .card-right {
@@ -102,6 +115,9 @@
    align-items: flex-end;
    width: 40%;
    font-size: 14px;
+   padding: 10px;
+  
+  
  }
  
  .card h2 {
