@@ -1,15 +1,19 @@
-import React from 'react'
+import React from 'react';
 
- function SearchBar() {
+function SearchBar({handleInput}) {
+  
 
-    return (
+  return (
     <div>
-    <form>
-    <input type='text' placeholder='search game...' />
-    </form>
+      <form>
+        <input
+          type='text'
+          placeholder='Search games...'
+          onChange={handleInput}
+        />
+      </form>
     </div>
-  )
+  );
 }
 
-
-export default SearchBar
+export default SearchBar;
