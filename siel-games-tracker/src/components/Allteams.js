@@ -6,7 +6,7 @@ function AllTeams() {
   const [games, setGames] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/games")
+    fetch("https://siel-league-api.onrender.com/games")
       .then((r) => r.json())
       .then((data) => {
         // remove duplicates from data
