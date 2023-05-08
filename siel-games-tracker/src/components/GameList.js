@@ -8,7 +8,7 @@ function GameList() {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:8000/games")
+    fetch("https://siel-league-api.onrender.com/games")
       .then((r) => r.json())
       .then((data) => {
         setGames(data);
