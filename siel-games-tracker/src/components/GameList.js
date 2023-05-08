@@ -20,7 +20,12 @@ function GameList() {
 
   });
 
-  const gameCards = filteredGames.map((game) => {
+  const gameCards = filteredGames.length === 0 ? (
+    <h1 className="error" >Sorry "{search}" is not a team in this Tournament"</h1>
+
+  ) : (
+  
+  filteredGames.map((game) => {
     return (
       <div className="card">
         <div className="card-left">
@@ -40,7 +45,8 @@ function GameList() {
         </div>
       </div>
     );
-  });
+  })
+  )
 
   function handleInput(e) {
     setSearch(e.target.value);
