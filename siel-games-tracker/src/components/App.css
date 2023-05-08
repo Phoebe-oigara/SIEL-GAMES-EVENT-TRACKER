@@ -8,6 +8,7 @@
  font-size: 40px;
  width: 100%;
  }
+
  .venue{
   padding: 2px;
   padding-bottom:10px ;
@@ -19,8 +20,6 @@
   font-weight: bold;
   text-align: center;
 }
-.error
-
  
  .card2 {
   display: flex;
