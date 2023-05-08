@@ -1,6 +1,7 @@
 import React, { useState, useEffect, Fragment } from "react";
 import GameCard from "./SingleGame";
 import SearchBar from "./SearchBar";
+import { FaCalendarCheck, FaWeight } from "react-icons/fa";
 
 function GameList() {
   const [games, setGames] = useState([]);
@@ -23,14 +24,17 @@ function GameList() {
     return (
       <div className="card">
         <div className="card-left">
-          <p style={{ color: "#01295C" }}>{game["GAME NO."]}</p>
+          <p style={{ color: "#C0C0C0" }}>{game["GAME NO."]}</p>
+          <div className="opn">
           <h2>{game["HOME"]}</h2>
           <p>Vs</p>
           <h2>{game["AWAY"]}</h2>
+          </div>
+          <p className="date" style={{ }} ><FaCalendarCheck />  {game["DATE"]} {game["TIME"]}</p>
         </div>
         <div className="card-right">
-          <p>Date: {game["DATE"]}</p>
-          <p>Time: {game["TIME"]}</p>
+          
+          <h2 className="venue">VENUE </h2>
           <p>Court: {game["COURT"]}</p>
           <p>Location: {game["LOCATION"]}</p>
         </div>

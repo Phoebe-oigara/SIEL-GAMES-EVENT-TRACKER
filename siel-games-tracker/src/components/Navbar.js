@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import pic from "./images/sl_022820_28430_12-removebg-preview.png";
+import pic from "./images/unnamed (1).png";
+
 
 function Navbar(){
     return (
@@ -17,8 +18,15 @@ function Navbar(){
      className={"nav"}
       to ="/teams"
      >
-      All Teams
+     Teams
     </NavLink>
+    < NavLink 
+     className={"nav"}
+      to ="/news"
+     >
+      News
+    </NavLink>
+    <p className="credits">@ 2023 SIEL</p>
         </div>
     )
 }

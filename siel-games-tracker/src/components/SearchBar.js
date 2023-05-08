@@ -8,7 +8,7 @@ function SearchBar({handleInput}) {
       <form>
         <input
           type='text'
-          placeholder='Search games...'
+          placeholder='Search for a team...'
           onChange={handleInput}
         />
       </form>
